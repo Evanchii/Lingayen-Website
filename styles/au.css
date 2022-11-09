@@ -1,0 +1,33 @@
+ /*Header Section*/
+hr {
+	margin-left: 85.5%;
+}
+
+/*Body or Content Section*/
+.content {
+	margin: 6% 0%;
+	background-color: white;
+}
+
+.au_head {
+	background-image: url(../assets/au_files/background-head.jpg);
+	width: 100%;
+}
+
+.head_white {
+	background-color: rgba(256,256,256,0.5);
+	width: 100%;
+	text-align: center;
+}
+
+.members {
+	margin: 5% 15%;
+}
+
+td img{
+	width: 100%;
+}
+
+th {
+	font-size: 25px;
+}

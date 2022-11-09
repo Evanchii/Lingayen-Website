@@ -1,0 +1,133 @@
+/*@font-face {
+	font-family: Sabado;
+	src: url(../assets/sabado.otf);
+}*/
+
+@font-face {
+	font-family: body-text;
+	src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: headline;
+	src: url(../assets/fonts/Baloo_Bhaina/BalooBhaina-Regular.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0% 0%;
+}
+
+h1 {
+	font-family: headline;
+}
+
+body {
+	font-family: body-text;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/*Header*/
+.header {
+	font-family: headline;
+	background-color: green;
+	padding-top: 5%;
+	filter: drop-shadow(0px/*x*/ 5px/*y*/ 1em/*spread*/);
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul li {
+	display: inline;
+	text-align: center;
+}
+
+li img {
+	position: absolute;
+	width: 10%;
+	top: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.header a {
+	font-size: 20px;
+	display: inline-block;
+	width: 14.25%;
+	padding: .75rem 0;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+}
+
+.container hr {
+	height: .25rem;
+	width: 14.25%;
+	background: tomato;
+	border: none;
+	transition: .3s ease-in-out;
+}
+
+.one:hover ~ hr {
+	margin-left: 0%;
+}
+
+.two:hover ~ hr {
+	margin-left: 14.25%;
+}
+
+.three:hover ~ hr {
+	margin-left: 28.50%;
+}
+
+.four:hover ~ hr {
+	margin-left: 57.00%;
+}
+
+.five:hover ~ hr {
+	margin-left: 71.25%;
+}
+
+.six:hover ~ hr {
+	margin-left: 85.50%;
+}
+/*Footer*/
+.footer {
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	background-color: black;
+	width: 100%;
+	color: white;
+	padding: 30px 10px;
+}
+
+.im_fo {
+	display: inline;
+	position: absolute;
+	left: 90%;
+	transform: translate(-50%, -50%);
+}
+
+.im_fo img {
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 25%;
+	margin-right: 2%;
+}
+
+.im_fo p {
+	margin: 10px;
+}
+
+/*Content*/
+.content {
+	margin: 5% 15%;
+}
+
+a, area {
+	outline: none;
+}

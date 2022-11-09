@@ -1,0 +1,129 @@
+@font-face {
+	font-family: body-text;
+	src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+	font-family: headline;
+	src: url(../assets/fonts/Baloo_Bhaina/BalooBhaina-Regular.ttf);
+}
+
+body {
+	font-family: headline;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(../assets/background/Home_Background.jpg);
+	background-size: cover;
+}
+
+/*Circle Stuffs on top*/
+.circles {
+	font-family: body-text;
+	display: inline-block;
+}
+
+.circles img {
+	display: none;
+	width: 12em;
+	margin: 15px 25px;
+	transition: filter 0.3s ease-in-out;
+}
+
+.circles img:hover {
+	filter: blur(2px);
+}
+
+@keyframes fade-in {
+	from {opacity: 0; margin: 15px -5em;}
+	to {opacity: 1; margin: 15px 25px;}
+}
+
+	.cat_container {
+		display: inline-block;
+		position: relative;
+	}
+
+	.cat_text {
+		box-shadow:0px 0px 25px 1px rgba(0,0,0,.5);
+		position: absolute;
+		padding: 4px 10px;
+		opacity: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity .5s ease-in-out, border .5s ease-in-out, background-color .5s ease-in-out;
+	}
+
+	.cat_container:hover > .cat_text {
+		filter: drop-shadow(0px 0px 15px);
+		background-color: rgba(247,240,2,.5); 
+		border: solid 1px black;
+		opacity: 1;
+	}
+
+/*Seal Stuffs*/
+.forButton button{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	outline: none;
+	position: fixed;
+	width: 300px;
+	height: 22.5em;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.seal {
+	position: fixed;
+	width: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: top 0.5s, left 0.5s, opacity 0.5s;
+	animation: fadein 1.5s;
+}
+
+.seal:active {
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+}
+
+.seal img {
+	margin-bottom: -10px;
+	width: 100%;
+	height: 100%;
+	transition: width 0.5s, height 0.5s;
+}
+
+.seal img:active {
+	width: 90%;
+	height: 90%;
+}
+/*Animation for Seal*/
+@keyframes fadein {
+	0% {opacity: 0; left: 50%; top: 100%; width: 0%;}
+	50% {opacity: 1; width: 110%;}
+	100% {left: 50%; right: 50%; width: 200px;}
+}
+
+/*For Note at the Bottom*/
+.note {
+	opacity: 0;
+	position: fixed;
+	animation: fadenote 2s infinite;
+	top: 92.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation-delay: 2s;
+}
+
+@keyframes fadenote {
+	0% {opacity: 0}
+	25% {opacity: 1;}
+	50% {opacity: .5;}
+	75% {opacity: 1;}
+	100% {opacity: 0;}
+}

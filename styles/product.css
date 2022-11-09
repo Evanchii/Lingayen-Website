@@ -1,0 +1,52 @@
+/*Header Section*/
+hr {
+	margin-left: 57.00%;
+}
+
+/*Body or Content Section*/
+.content {
+	background-color: white;
+}
+
+.mySlides {
+	display:none;
+}
+
+.gal_container {
+	position: relative;
+	margin-top: 2em; 
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.gal_container img {
+	height: 100%;
+	overflow: hidden;
+}
+
+.content button {
+	width: 5%;
+	border: none;
+	background: black;
+	color: white;
+	font-size: 150%;
+}
+
+.gal_left {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	right: 95%;
+}
+
+.gal_right {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 100%;
+}
+
+.festives_but img {
+	width: 7.5%;
+	margin-left: 5%;
+}

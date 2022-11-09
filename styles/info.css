@@ -1,0 +1,50 @@
+/*Header Section*/
+.container hr {
+	margin-left: 14.25%;
+}
+/*Body or Content Section*/
+.content {
+	background-color: white;
+	margin: 5% 15%;
+}
+
+hr {
+	height: .125rem;
+	width: 100%;
+	background-color: green;
+	border-radius: -50%;
+	border: 1px solid green;
+}
+
+.officials {
+	position: relative;
+}
+
+.mayor {
+	top: -1%;
+	width: 20%;
+	position: absolute;
+	right: 10%;
+}
+
+h2 {
+	background-color: green;
+	width: 100%;
+	padding: 10px 20px;
+}
+
+.vm {
+	width: 20%;
+	position: absolute;
+	left: 15%;
+	top: 40%;
+}
+
+.vm_h2 {
+	margin-top: 25%;
+	text-align: right;
+}
+
+.history p {
+	margin-bottom: 10px;
+}
